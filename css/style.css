@@ -1,0 +1,37 @@
+body {
+  background-color: #1e202b;
+}
+.mainBg {
+  background-color: #1e202b;
+}
+h1 {
+  font-size: 1rem;
+}
+small {
+  font-size: 0.5rem;
+}
+.mainContainer {
+  width: 80%;
+  margin: auto;
+}
+.bg-img {
+  background-image: url(../images/banner.png);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.searchInput {
+  border-radius: 15px;
+}
+.oddHead {
+  background-color: #2d303d;
+}
+.oddBody {
+  background-color: #323544;
+}
+.evenBody {
+  background-color: #262936;
+}
+.form-control::-moz-focus-inner {
+  color: red;
+}

@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="p-5">
+        <div class="mainContainer">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <div class="row justify-content-start ">
+                        <a class="navbar-brand col-md-6" href="#">
+                            <img src="./images/logo.png" style="width: 64px;" class="d-inline-block align-middle">
+                            <div class="d-inline-block align-middle">
+                                <h1 class="text-white">Weather</h1>
+                                <small class="text-white">tagline goes here
+                                </small>
+                            </div>
+                        </a>
+
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                            <div class="collapse navbar-collapse " id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="#">Features</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="#">Pricing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-white" href="#" tabindex="-1"
+                                            aria-disabled="true">Disabled</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </button>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+
+    </header>
+    <section class="bg-img vh-100 p-5">
+        <div class="mainContainer">
+            <input type="text" class="form-control mb-5 mainBg searchInput" onkeyup="cityNameFunc(this.value)"
+                id="serachBar" placeholder="Enter your Location...">
+            <table class="mainBg text-white w-100">
+                <tr class="">
+
+                    <td class="p-3 oddHead d-flex justify-content-between">
+                        <p id="leftTitle"></p>
+                        <p id="rightTitle"></p>
+                    </td>
+                    <td class="p-3" id="secondHead"></td>
+                    <td class="p-3 oddHead" id="thirdHead"></td>
+
+                </tr>
+                <tr>
+                    <td class="p-3 oddBody p-3">
+                        <div class="row" id="firstRow"></div>
+                        <div class="row justify-content-around" id="secondRow">
+                            <h2 id="todayTemp"></h2>
+                            <img src="" style="width: 90px;" id="dayNight">
+                        </div>
+                        <div class="row" id="thirdRow"></div>
+                        <div class="mt-2" id="fourthRow">
+                            <span class="me-4" id="rain">
+
+                            </span>
+                            <span class="me-4" id="wind">
+                            </span>
+                            <span class="me-4" id="windDirection">
+                            </span>
+                        </div>
+                    </td>
+                    <td class="p-3 evenBody flex-column align-items-center">
+                        <img src="" style="width: 45px;" id="secondIcon" class="mb-3">
+                        <h3 id="secondMaxTemp" class="mb-3"></h3>
+                        <p id="secondMinTemp" class="mb-3"></p>
+                        <p id="secondCond" class="mb-3"></p>
+                    </td>
+                    <td class="p-3 oddBody flex-column align-items-center">
+                        <img src="" style="width: 45px;" id="thirdIcon" class="mb-3">
+                        <h3 id="thirdMaxTemp" class="mb-3"></h3>
+                        <p id="thirdMinTemp" class="mb-3"></p>
+                        <p id="thirdCond" class="mb-3"></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
